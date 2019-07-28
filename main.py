@@ -32,6 +32,9 @@ y_pred = model.predict(X_test)
 
 # yyplot
 plt.scatter(y_test, y_pred)
+plt.ylim(0, 5)
+plt.xlim(0, 5)
+plt.plot(np.linspace(0, 5, 5), np.linspace(0, 5, 5), "r-")
 plt.title('fetch_california_housing × LinearRegression')
 plt.xlabel('y_test')
 plt.ylabel('y_pred')
